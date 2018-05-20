@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">User Login PB5</string>
+    <string name="register">Register Employee</string>
+    <string-array name="cities">
+        <item>Mirpur</item>
+        <item>Mohammadpur</item>
+        <item>Dhanmondi</item>
+        <item>Uttara</item>
+        <item>Gulshan</item>
+        <item>Banani</item>
+        <item>Kawranbazar</item>
+    </string-array>
+</resources>

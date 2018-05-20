@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.bitm.pencilbox.userloginpb5.HomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Basic Salaried Employee"
+            android:textSize="22sp"
+            android:padding="7dp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="9dp"
+            android:background="#a0ceec">
+            <EditText
+                android:id="@+id/empNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter employee name"/>
+            <EditText
+                android:id="@+id/empIdET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter employee Id"/>
+            <EditText
+                android:id="@+id/empDesignationET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter employee designation"/>
+            <EditText
+                android:id="@+id/empSalaryET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter basic salary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Skills"
+                android:layout_margin="3dp"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/english"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:layout_weight="1"
+                    android:onClick="checkSkill"/>
+                <CheckBox
+                    android:id="@+id/Bangla"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bangla"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:onClick="checkSkill"/>
+                <CheckBox
+                    android:id="@+id/spanish"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Spanish"
+                    android:layout_weight="1"
+                    android:onClick="checkSkill"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/Arabic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Arabic"
+                    android:layout_weight="1"
+                    android:onClick="checkSkill"/>
+                <CheckBox
+                    android:id="@+id/hindi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi"
+                    android:layout_weight="1"
+                    android:onClick="checkSkill"/>
+                <CheckBox
+                    android:id="@+id/french"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="French"
+                    android:layout_weight="1"
+                    android:onClick="checkSkill"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Gender"
+                android:layout_margin="3dp"
+                android:textSize="20sp"/>
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"/>
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/citySP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="select date of birth"
+                android:onClick="selectDate"/>
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:layout_margin="7dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_margin="7dp"
+                android:onClick="showEmployees"
+                android:background="@color/colorPrimaryDark"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
